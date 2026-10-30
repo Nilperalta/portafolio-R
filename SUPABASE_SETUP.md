@@ -70,7 +70,6 @@ npm run dev
 - Vuelve a `/` → deberías ver el proyecto y el botón de descargar CV.
 
 ## Notas para cuando lo repasemos juntos
-
 - `src/lib/supabaseClient.js` → dónde se crea la conexión.
 - `src/services/` → toda la comunicación con Supabase (proyectos, auth,
   storage) vive aquí, nunca directamente en los componentes.

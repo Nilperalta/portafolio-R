@@ -32,16 +32,8 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="availability">
-          <span className="status-dot" />
-          Disponible para oportunidades frontend
-        </div>
       </div>
 
-      <div className="hero-visual" aria-hidden="true">
-        <div className="hero-orbit" />
-        <div className="hero-chip">React · UI · Web</div>
-      </div>
     </section>
   )
 }

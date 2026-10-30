@@ -7,8 +7,9 @@ import { siteConfig, getWhatsAppUrl } from '../../data/siteConfig'
 // por eso usamos <a> normal en vez de <Link>: así el navegador
 // hace scroll automático hasta el elemento con ese id.
 const links = [
+  ['Inicio', '#top'],
   ['Sobre mí', '#about'],
-  ['Servicios', '#services'],
+  /*['Servicios', '#services'],*/
   ['Habilidades', '#skills'],
   ['Proyectos', '#projects'],
   ['Contacto', '#contact'],

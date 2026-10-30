@@ -1,6 +1,9 @@
 import { ArrowUpRight, Code2, Palette, Smartphone } from 'lucide-react'
 import { siteConfig } from '../../data/siteConfig'
 import SectionHeading from '../layout/SectionHeading'
+import { UserRound, Mail, MapPin } from 'lucide-react'
+import perfil from '../../assets/images/about.png'
+
 
 const highlights = [
   { icon: Code2, label: 'Frontend', value: 'React + JavaScript' },
@@ -13,25 +16,53 @@ export default function About() {
     <section className="section section-shell" id="about">
       <SectionHeading
         eyebrow="Sobre mí"
-        title="Ideas que se vuelven"
-        accent="interfaces."
+        title="Soy Web Designer"
+        accent="& Developer."
         //description="A frontend profile that combines development with a strong eye for interface design."
       />
 
       <div className="about-grid">
         <div className="about-copy">
-          <p>
-            Tomo los diseños realizados en figma y los convierto en una interfaz web real y adaptable.
-          </p>
-          <p>
-            Me importan los componentes reutilizables, seguir una estructura clara que permita que el proyecto ser escalable
-          </p>
+            <p>
+              Egresada de Administración de sistemas, enfocada en el desarrollo Frontend, con insterés
+              en ciberseguridad y las tecnologías Backend como servicio (Baas)
+            </p>
+
+            <ul className="about-info">
+              <li>
+                <UserRound size={19} />
+                <div>
+                  <span>Nombre</span>
+                  <strong>Nilda Peralta</strong>
+                </div>
+              </li>
+
+              <li>
+                <Mail size={19} />
+                <div>
+                  <span>Email</span>
+                  <strong>nildalisset.ll@gmail.com</strong>
+                </div>
+              </li>
+
+              <li>
+                <MapPin size={19} />
+                <div>
+                  <span>Ubicación</span>
+                  <strong>Lima, Perú</strong>
+                </div>
+              </li>
+            </ul>
+         
           <a className="text-link" href="#contact">
             Trabajemos juntos <ArrowUpRight size={16} />
           </a>
         </div>
 
-        <div className="about-cards">
+        <div className="about-image">
+          <img src={perfil} alt="Fotografía" />
+        </div>
+        {/*<div className="about-cards">
           {highlights.map(({ icon: Icon, label, value }) => (
             <article className="stat-card" key={label}>
               <Icon size={21} />
@@ -39,7 +70,7 @@ export default function About() {
               <strong>{value}</strong>
             </article>
           ))}
-        </div>
+        </div>*/}
       </div>
     </section>
   )
